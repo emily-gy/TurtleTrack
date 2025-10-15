@@ -54,15 +54,13 @@ for lineString in line_list:
 keys = []
 
 # Loop through items in date_dict
-for item in date_dict.items():
-    key = item[0]
-    value = item[1]
+for key, value in date_dict.items():
     if value == user_date:
         keys.append(key)
-# Another way to write this code chunck:
-# For key, value in date_dict.items():
-    # if value == user_date:
-    #   keys.append(key)
+
+# Report if no record were found
+if len(keys) == 0:
+    print("No records were found on {user_date}")
 
 # Loop through keys and report locations
 for key in keys:
