@@ -9,7 +9,6 @@
 # Date:   Fall 2025
 #--------------------------------------------------------------
 
-# While loop
 #Create a variable pointing to the data file
 file_name = './data/raw/sara.txt'
 
